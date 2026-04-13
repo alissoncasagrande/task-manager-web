@@ -1,0 +1,27 @@
+# Ignorar configurações locais do VS Code
+.vscode/
+
+# Ignorar cache do Python
+__pycache__/
+*.pyc
+
+# Nesta pasta faço copias do projeto em txt
+__taskmanager.txt
+
+# Ignorar ambientes virtuais
+venv/
+env/
+ENV/
+
+# Ignorar variaveis de ambiente (SEGURANCA)
+.env
+
+# Ignorar banco de dados SQLite
+*.db
+*.sqlite3
+
+# Ignorar arquivos temporarios
+*.log
+
+# Certificados AWS
+*.pem
