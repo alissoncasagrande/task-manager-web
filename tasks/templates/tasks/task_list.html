@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Tasks</title>
+</head>
+<body>
+    <h1>List of Tasks of {{ user.username }}</h1>
+    
+    <ul>
+        {% for task in tasks %}
+            <li>
+                <strong>{{ task.title }}</strong> - 
+                Status: {{ task.status.description }} 
+                <small>(Created at: {{ task.created_at|date:"M d, Y" }})</small>
+            </li>
+        {% empty %}
+            <li>No Tasks found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
